@@ -17,5 +17,5 @@ print(fatorial_recursivo(0))
 
 '''Fatorial Recursivo:
 
-No método recursivo, a função chama a si mesma para 
+No método recursivo, a função chama a si mesma para
 calcular o fatorial:'''
