@@ -12,7 +12,7 @@ def fatorial_recursivo(n):
         return n * fatorial_recursivo(n - 1)
 
 # Testa a função com o valor 0, imprimindo o resultado
-print(fatorial_recursivo(0))
+print(fatorial_recursivo(5))
 
 
 '''Fatorial Recursivo:
