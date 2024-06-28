@@ -1,9 +1,11 @@
 ''' PESQUISA SEQUENCIAL
-Vamos supor que você e um amigo estão jogando um jogo de adivinhação de
-números, no qual seu amigo gostaria que você adivinhasse o número que está
-pensando dentro de um intervalo de 1 a 100 valores. A cada tentativa sua,
-seu amigo irá indicar se o valor está baixo ou alto em relação ao que ele
-pensou.'''
+A pesquisa sequencial, também conhecida como busca linear, é um método simples para encontrar um valor em uma lista. 
+Ela funciona verificando cada elemento da lista, um por um, do início ao fim, até encontrar o valor desejado ou até que todos os
+elementos tenham sido examinados.
+Se o valor for encontrado, a pesquisa retorna a posição do valor na lista; caso contrário, indica que o valor não está presente. 
+A pesquisa sequencial tem um tempo de execução deO(n) , onde 
+é o número de elementos na lista, o que pode ser ineficiente para listas grandes.
+'''
 
 # Programa princípal.
 import random
@@ -20,9 +22,10 @@ def buscaSequencial(dados, buscando):
         return - 1
     else:
         return i + 1
-    
+
 # gerando os valores dentro do randon(intervalo).
 dados = random.sample(range(10), 10)
+dados.sort()
 print(dados)
 buscando = int(input("Digite o valor que deseja burcar: "))
 achou = buscaSequencial(dados, buscando)
